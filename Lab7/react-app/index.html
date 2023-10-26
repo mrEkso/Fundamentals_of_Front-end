@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <style>body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+    }
+
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsICdSb2JvdG8nLCAnT3h5Z2VuJyxcclxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcclxuICAgIHNhbnMtc2VyaWY7XHJcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XHJcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcclxufVxyXG5cclxuY29kZSB7XHJcbiAgZm9udC1mYW1pbHk6IHNvdXJjZS1jb2RlLXBybywgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdDb3VyaWVyIE5ldycsXHJcbiAgICBtb25vc3BhY2U7XHJcbn1cclxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style>
+    <style>/* body */
+    body {
+        animation: body-animation 1s;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+    }
+
+    @keyframes body-animation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* background */
+    .bg-gold {
+        background: gold;
+    }
+
+    .bg-white {
+        background: white;
+    }
+
+    /* container */
+    .container-fluid {
+        display: flex;
+        justify-content: center;
+        background: white;
+        border-radius: 15px;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    /* scale-animation */
+    .scale-animation {
+        animation: scale-animation 1s;
+    }
+
+    @keyframes scale-animation {
+        0% {
+            scale: 0;
+        }
+        100% {
+            scale: 1;
+        }
+    }
+
+    .nav__link {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        transition: color 0.2s linear;
+        font-family: Gill Sans, sans-serif;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .nav__link:hover {
+        color: gold;
+    }
+
+    /* logo */
+    .logo {
+        margin-left: 5%;
+        width: 75%;
+        animation: logo-animation 1s;
+    }
+
+    @keyframes logo-animation {
+        0% {
+            width: 30%;
+            margin-left: 10%;
+        }
+        100% {
+            margin-left: 5%;
+        }
+    }
+
+    /* content */
+    .content {
+        border-top-color: gold;
+        width: 100%;
+        margin: 10px 10px 10px 5px;
+        padding-top: 10px;
+    }
+
+    /* card */
+    .card-group {
+        display: flex;
+        width: 100%;
+    }
+
+    .card {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    /* input */
+    .input__text {
+        font-style: italic;
+    }
+
+    /* table */
+    .mytable {
+        overflow-x: auto;
+        overflow-y: hidden;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+    }
+
+    /* footer */
+    footer {
+        font-family: Arial, serif;
+        color: white;
+        border-style: solid;
+        background: darkgoldenrod;
+        padding-top: 2%;
+        padding-left: 5%;
+    }
+
+    .footer__container__link {
+        padding-top: 10px;
+        margin-left: 20px;
+    }
+
+    .footer__link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer__link:hover {
+        color: yellow;
+    }
+
+    .title {
+        font-size: 120%;
+    }
+
+    /* contacts */
+    .contacts {
+        font-style: italic;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+    }
+
+    .contacts__link {
+        color: gold;
+    }
+
+    .contacts__link:hover {
+        color: yellow;
+        transition: 0.2s;
+    }
+
+    /* form */
+    .form {
+        border-style: solid;
+        border-color: gold;
+        border-radius: 15px;
+    }
+
+    .form-submit {
+        background: gold !important;
+    }
+
+    /* news */
+    .opacity-animation {
+        opacity: 0.9;
+        transition: 0.5s;
+    }
+
+    .opacity-animation:hover {
+        opacity: 1;
+        scale: 0.95;
+    }
+
+    /* icon-animation */
+    .icon-animation {
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .icon-animation:hover {
+        color: gold;
+    }
+
+    /* additionally */
+    .minvh-10 {
+        min-height: 10vh;
+    }
+
+    .minvh-70 {
+        min-height: 70vh;
+    }
+
+    .minvh-80 {
+        min-height: 80vh;
+    }
+
+    .minvh-120 {
+        min-height: 120vh;
+    }
+
+    .gold {
+        color: gold;
+    }
+
+    /* error */
+    .form-error {
+        color: red;
+    }
+
+    /* align */
+    .d-flex {
+        display: flex;
+    }
+
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .align-items-center {
+        align-items: center;
+    }
+
+    /* width */
+    .w-50 {
+        width: 50% !important;
+    }
+
+    .w-75 {
+        width: 75% !important;
+    }
+
+    .w-90 {
+        width: 90% !important;
+    }
+
+    .w-100 {
+        width: 100% !important;
+    }
+
+    .mw-50 {
+        max-width: 50%;
+    }
+
+    .mw-100 {
+        max-width: 100%;
+    }
+
+    /* height */
+    .h-100 {
+        height: 100% !important;
+    }
+
+    .mh-100vh {
+        max-height: 100vh;
+    }
+
+    /* text */
+    .text-center {
+        text-align: center;
+    }
+
+    .clickable {
+        cursor: pointer;
+    }
+
+    .mt-3 {
+        margin-top: 3%;
+    }
+
+
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hc3NldHMvY3NzL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxTQUFTO0FBQ1Q7SUFDSSw0QkFBNEI7SUFDNUIsK0NBQStDO0FBQ25EOztBQUVBO0lBQ0k7UUFDSSxVQUFVO0lBQ2Q7SUFDQTtRQUNJLFVBQVU7SUFDZDtBQUNKOztBQUVBLGVBQWU7QUFDZjtJQUNJLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGlCQUFpQjtBQUNyQjs7QUFFQSxjQUFjO0FBQ2Q7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksVUFBVTtJQUNWLGVBQWU7SUFDZixnQkFBZ0I7SUFDaEIsaUJBQWlCO0FBQ3JCOztBQUVBLG9CQUFvQjtBQUNwQjtJQUNJLDZCQUE2QjtBQUNqQzs7QUFFQTtJQUNJO1FBQ0ksUUFBUTtJQUNaO0lBQ0E7UUFDSSxRQUFRO0lBQ1o7QUFDSjs7QUFFQTtJQUNJLHFCQUFxQjtJQUNyQixZQUFZO0lBQ1oseUJBQXlCO0lBQ3pCLDZCQUE2QjtJQUM3QixrQ0FBa0M7SUFDbEMsZUFBZTtJQUNmLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLFdBQVc7QUFDZjs7QUFFQSxTQUFTO0FBQ1Q7SUFDSSxlQUFlO0lBQ2YsVUFBVTtJQUNWLDRCQUE0QjtBQUNoQzs7QUFFQTtJQUNJO1FBQ0ksVUFBVTtRQUNWLGdCQUFnQjtJQUNwQjtJQUNBO1FBQ0ksZUFBZTtJQUNuQjtBQUNKOztBQUVBLFlBQVk7QUFDWjtJQUNJLHNCQUFzQjtJQUN0QixXQUFXO0lBQ1gsMEJBQTBCO0lBQzFCLGlCQUFpQjtBQUNyQjs7QUFFQSxTQUFTO0FBQ1Q7SUFDSSxhQUFhO0lBQ2IsV0FBVztBQUNmOztBQUVBO0lBQ0ksVUFBVTtJQUNWLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIscUJBQXFCO0FBQ3pCOztBQUVBLFVBQVU7QUFDVjtJQUNJLGtCQUFrQjtBQUN0Qjs7QUFFQSxVQUFVO0FBQ1Y7SUFDSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0lBQ2xCLCtDQUErQztBQUNuRDs7QUFFQSxXQUFXO0FBQ1g7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQix5QkFBeUI7SUFDekIsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGlCQUFpQjtJQUNqQixpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxZQUFZO0lBQ1oscUJBQXFCO0FBQ3pCOztBQUVBO0lBQ0ksYUFBYTtBQUNqQjs7QUFFQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUEsYUFBYTtBQUNiO0lBQ0ksa0JBQWtCO0lBQ2xCLCtDQUErQztBQUNuRDs7QUFFQTtJQUNJLFdBQVc7QUFDZjs7QUFFQTtJQUNJLGFBQWE7SUFDYixnQkFBZ0I7QUFDcEI7O0FBRUEsU0FBUztBQUNUO0lBQ0ksbUJBQW1CO0lBQ25CLGtCQUFrQjtJQUNsQixtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSwyQkFBMkI7QUFDL0I7O0FBRUEsU0FBUztBQUNUO0lBQ0ksWUFBWTtJQUNaLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLFVBQVU7SUFDVixXQUFXO0FBQ2Y7O0FBRUEsbUJBQW1CO0FBQ25CO0lBQ0ksZUFBZTtJQUNmLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxXQUFXO0FBQ2Y7O0FBRUEsaUJBQWlCO0FBQ2pCO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBLFVBQVU7QUFDVjtJQUNJLFVBQVU7QUFDZDs7QUFFQSxVQUFVO0FBQ1Y7SUFDSSxhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCOztBQUVBO0lBQ0ksbUJBQW1CO0FBQ3ZCOztBQUVBLFVBQVU7QUFDVjtJQUNJLHFCQUFxQjtBQUN6Qjs7QUFFQTtJQUNJLHFCQUFxQjtBQUN6Qjs7QUFFQTtJQUNJLHFCQUFxQjtBQUN6Qjs7QUFFQTtJQUNJLHNCQUFzQjtBQUMxQjs7QUFFQTtJQUNJLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxlQUFlO0FBQ25COztBQUVBLFdBQVc7QUFDWDtJQUNJLHVCQUF1QjtBQUMzQjs7QUFFQTtJQUNJLGlCQUFpQjtBQUNyQjs7QUFFQSxTQUFTO0FBQ1Q7SUFDSSxrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxlQUFlO0FBQ25COztBQUVBO0lBQ0ksY0FBYztBQUNsQiIsInNvdXJjZXNDb250ZW50IjpbIi8qIGJvZHkgKi9cclxuYm9keSB7XHJcbiAgICBhbmltYXRpb246IGJvZHktYW5pbWF0aW9uIDFzO1xyXG4gICAgZm9udC1mYW1pbHk6IENvbWljIFNhbnMgTVMsIENvbWljIFNhbnMsIGN1cnNpdmU7XHJcbn1cclxuXHJcbkBrZXlmcmFtZXMgYm9keS1hbmltYXRpb24ge1xyXG4gICAgMCUge1xyXG4gICAgICAgIG9wYWNpdHk6IDA7XHJcbiAgICB9XHJcbiAgICAxMDAlIHtcclxuICAgICAgICBvcGFjaXR5OiAxO1xyXG4gICAgfVxyXG59XHJcblxyXG4vKiBiYWNrZ3JvdW5kICovXHJcbi5iZy1nb2xkIHtcclxuICAgIGJhY2tncm91bmQ6IGdvbGQ7XHJcbn1cclxuXHJcbi5iZy13aGl0ZSB7XHJcbiAgICBiYWNrZ3JvdW5kOiB3aGl0ZTtcclxufVxyXG5cclxuLyogY29udGFpbmVyICovXHJcbi5jb250YWluZXItZmx1aWQge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYmFja2dyb3VuZDogd2hpdGU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxNXB4O1xyXG4gICAgbWluLWhlaWdodDogMTAwdmg7XHJcbn1cclxuXHJcbi5jb250YWluZXIge1xyXG4gICAgd2lkdGg6IDkwJTtcclxuICAgIG1heC13aWR0aDogMTAwJTtcclxuICAgIHBhZGRpbmctbGVmdDogMiU7XHJcbiAgICBwYWRkaW5nLXJpZ2h0OiAyJTtcclxufVxyXG5cclxuLyogc2NhbGUtYW5pbWF0aW9uICovXHJcbi5zY2FsZS1hbmltYXRpb24ge1xyXG4gICAgYW5pbWF0aW9uOiBzY2FsZS1hbmltYXRpb24gMXM7XHJcbn1cclxuXHJcbkBrZXlmcmFtZXMgc2NhbGUtYW5pbWF0aW9uIHtcclxuICAgIDAlIHtcclxuICAgICAgICBzY2FsZTogMDtcclxuICAgIH1cclxuICAgIDEwMCUge1xyXG4gICAgICAgIHNjYWxlOiAxO1xyXG4gICAgfVxyXG59XHJcblxyXG4ubmF2X19saW5rIHtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbiAgICB0cmFuc2l0aW9uOiBjb2xvciAwLjJzIGxpbmVhcjtcclxuICAgIGZvbnQtZmFtaWx5OiBHaWxsIFNhbnMsIHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgICBsZXR0ZXItc3BhY2luZzogMXB4O1xyXG59XHJcblxyXG4ubmF2X19saW5rOmhvdmVyIHtcclxuICAgIGNvbG9yOiBnb2xkO1xyXG59XHJcblxyXG4vKiBsb2dvICovXHJcbi5sb2dvIHtcclxuICAgIG1hcmdpbi1sZWZ0OiA1JTtcclxuICAgIHdpZHRoOiA3NSU7XHJcbiAgICBhbmltYXRpb246IGxvZ28tYW5pbWF0aW9uIDFzO1xyXG59XHJcblxyXG5Aa2V5ZnJhbWVzIGxvZ28tYW5pbWF0aW9uIHtcclxuICAgIDAlIHtcclxuICAgICAgICB3aWR0aDogMzAlO1xyXG4gICAgICAgIG1hcmdpbi1sZWZ0OiAxMCU7XHJcbiAgICB9XHJcbiAgICAxMDAlIHtcclxuICAgICAgICBtYXJnaW4tbGVmdDogNSU7XHJcbiAgICB9XHJcbn1cclxuXHJcbi8qIGNvbnRlbnQgKi9cclxuLmNvbnRlbnQge1xyXG4gICAgYm9yZGVyLXRvcC1jb2xvcjogZ29sZDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgbWFyZ2luOiAxMHB4IDEwcHggMTBweCA1cHg7XHJcbiAgICBwYWRkaW5nLXRvcDogMTBweDtcclxufVxyXG5cclxuLyogY2FyZCAqL1xyXG4uY2FyZC1ncm91cCB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5jYXJkIHtcclxuICAgIHdpZHRoOiAzMCU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLyogaW5wdXQgKi9cclxuLmlucHV0X190ZXh0IHtcclxuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcclxufVxyXG5cclxuLyogdGFibGUgKi9cclxuLm15dGFibGUge1xyXG4gICAgb3ZlcmZsb3cteDogYXV0bztcclxuICAgIG92ZXJmbG93LXk6IGhpZGRlbjtcclxuICAgIGZvbnQtZmFtaWx5OiBDb21pYyBTYW5zIE1TLCBDb21pYyBTYW5zLCBjdXJzaXZlO1xyXG59XHJcblxyXG4vKiBmb290ZXIgKi9cclxuZm9vdGVyIHtcclxuICAgIGZvbnQtZmFtaWx5OiBBcmlhbCwgc2VyaWY7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBib3JkZXItc3R5bGU6IHNvbGlkO1xyXG4gICAgYmFja2dyb3VuZDogZGFya2dvbGRlbnJvZDtcclxuICAgIHBhZGRpbmctdG9wOiAyJTtcclxuICAgIHBhZGRpbmctbGVmdDogNSU7XHJcbn1cclxuXHJcbi5mb290ZXJfX2NvbnRhaW5lcl9fbGluayB7XHJcbiAgICBwYWRkaW5nLXRvcDogMTBweDtcclxuICAgIG1hcmdpbi1sZWZ0OiAyMHB4O1xyXG59XHJcblxyXG4uZm9vdGVyX19saW5rIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5cclxuLmZvb3Rlcl9fbGluazpob3ZlciB7XHJcbiAgICBjb2xvcjogeWVsbG93O1xyXG59XHJcblxyXG4udGl0bGUge1xyXG4gICAgZm9udC1zaXplOiAxMjAlO1xyXG59XHJcblxyXG4vKiBjb250YWN0cyAqL1xyXG4uY29udGFjdHMge1xyXG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xyXG4gICAgZm9udC1mYW1pbHk6IENvbWljIFNhbnMgTVMsIENvbWljIFNhbnMsIGN1cnNpdmU7XHJcbn1cclxuXHJcbi5jb250YWN0c19fbGluayB7XHJcbiAgICBjb2xvcjogZ29sZDtcclxufVxyXG5cclxuLmNvbnRhY3RzX19saW5rOmhvdmVyIHtcclxuICAgIGNvbG9yOiB5ZWxsb3c7XHJcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xyXG59XHJcblxyXG4vKiBmb3JtICovXHJcbi5mb3JtIHtcclxuICAgIGJvcmRlci1zdHlsZTogc29saWQ7XHJcbiAgICBib3JkZXItY29sb3I6IGdvbGQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxNXB4O1xyXG59XHJcblxyXG4uZm9ybS1zdWJtaXQge1xyXG4gICAgYmFja2dyb3VuZDogZ29sZCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4vKiBuZXdzICovXHJcbi5vcGFjaXR5LWFuaW1hdGlvbiB7XHJcbiAgICBvcGFjaXR5OiAwLjk7XHJcbiAgICB0cmFuc2l0aW9uOiAwLjVzO1xyXG59XHJcblxyXG4ub3BhY2l0eS1hbmltYXRpb246aG92ZXIge1xyXG4gICAgb3BhY2l0eTogMTtcclxuICAgIHNjYWxlOiAwLjk1O1xyXG59XHJcblxyXG4vKiBpY29uLWFuaW1hdGlvbiAqL1xyXG4uaWNvbi1hbmltYXRpb24ge1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgdHJhbnNpdGlvbjogLjVzO1xyXG59XHJcblxyXG4uaWNvbi1hbmltYXRpb246aG92ZXIge1xyXG4gICAgY29sb3I6IGdvbGQ7XHJcbn1cclxuXHJcbi8qIGFkZGl0aW9uYWxseSAqL1xyXG4ubWludmgtMTAge1xyXG4gICAgbWluLWhlaWdodDogMTB2aDtcclxufVxyXG5cclxuLm1pbnZoLTcwIHtcclxuICAgIG1pbi1oZWlnaHQ6IDcwdmg7XHJcbn1cclxuXHJcbi5taW52aC04MCB7XHJcbiAgICBtaW4taGVpZ2h0OiA4MHZoO1xyXG59XHJcblxyXG4ubWludmgtMTIwIHtcclxuICAgIG1pbi1oZWlnaHQ6IDEyMHZoO1xyXG59XHJcblxyXG4uZ29sZCB7XHJcbiAgICBjb2xvcjogZ29sZDtcclxufVxyXG5cclxuLyogZXJyb3IgKi9cclxuLmZvcm0tZXJyb3Ige1xyXG4gICAgY29sb3I6IHJlZDtcclxufVxyXG5cclxuLyogYWxpZ24gKi9cclxuLmQtZmxleCB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG59XHJcblxyXG4uanVzdGlmeS1jb250ZW50LWNlbnRlciB7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLmFsaWduLWl0ZW1zLWNlbnRlciB7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG59XHJcblxyXG4vKiB3aWR0aCAqL1xyXG4udy01MCB7XHJcbiAgICB3aWR0aDogNTAlICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbi53LTc1IHtcclxuICAgIHdpZHRoOiA3NSUgIWltcG9ydGFudDtcclxufVxyXG5cclxuLnctOTAge1xyXG4gICAgd2lkdGg6IDkwJSAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4udy0xMDAge1xyXG4gICAgd2lkdGg6IDEwMCUgIWltcG9ydGFudDtcclxufVxyXG5cclxuLm13LTUwIHtcclxuICAgIG1heC13aWR0aDogNTAlO1xyXG59XHJcblxyXG4ubXctMTAwIHtcclxuICAgIG1heC13aWR0aDogMTAwJTtcclxufVxyXG5cclxuLyogaGVpZ2h0ICovXHJcbi5oLTEwMCB7XHJcbiAgICBoZWlnaHQ6IDEwMCUgIWltcG9ydGFudDtcclxufVxyXG5cclxuLm1oLTEwMHZoIHtcclxuICAgIG1heC1oZWlnaHQ6IDEwMHZoO1xyXG59XHJcblxyXG4vKiB0ZXh0ICovXHJcbi50ZXh0LWNlbnRlciB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5jbGlja2FibGUge1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG59XHJcblxyXG4ubXQtMyB7XHJcbiAgICBtYXJnaW4tdG9wOiAzJTtcclxufVxyXG5cclxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root">
+    <div>
+        <header>
+            <div class="d-flex justify-content-center"><img src="public/images/logo.png" alt="logo"></div>
+        </header>
+        <div class="container-fluid bg-gold">
+            <div class="container">
+                <div class="content"><h2 class="icon-animation">Окаянченко Давид Олександрович</h2>
+                    <h3>09.10.2004 - Полтава</h3>
+                    <h2 class="text-center clickable" id="el9">КПІ</h2>
+                    <h2 class="clickable" id="el10">Мої хоббі:</h2>
+                    <ul>
+                        <li>Грати на музичних інструментах (барабани, гітара, фортепіано)</li>
+                        <li>Слухати музику</li>
+                        <li>Проводити час з сім'єю</li>
+                    </ul>
+                    <h2>Мої улюблені фільми:</h2>
+                    <ol>
+                        <li>"Сіністер"</li>
+                        <li>"Різанина бензопилою"</li>
+                        <li>"Прокляття черниці"</li>
+                    </ol>
+                    <p> Берлін - це велике та живописне місто в Німеччині з багатою історією та культурним впливом.
+                        Місто розташоване в північно-східній частині країни та є столицею Німеччини. Берлін відомий
+                        своєю історією, яка включає події Другої світової війни, розділення на Західний і Східний Берлін
+                        та події Холодної війни.</p>
+                    <div class="images mw-100"><a class="d-flex justify-content-center"
+                                                  href="https://uk.wikipedia.org/wiki/%D0%91%D0%B5%D1%80%D0%BB%D1%96%D0%BD"><img
+                            class="image opacity-animation w-50" src="public/images/Berlin.jpg" alt="Фото Берліна"></a>
+                        <br>
+                        <div class="d-flex justify-content-center">
+                            <button class="bg-gold" id="addButton">Додати</button>
+                            <button class="bg-gold" id="increaseButton">Збільшити</button>
+                            <button class="bg-gold" id="decreaseButton">Зменшити</button>
+                            <button class="bg-gold" id="deleteButton">Видалити</button>
+                        </div>
+                    </div>
+                    <div class="mt-3"></div>
+                    <h2>Goods Gallery</h2>
+                    <div class="card-group">
+                        <div class="card"><img class="image opacity-animation w-90 h-100"
+                                               src="public/images/goods/car1.jpg"
+                                               alt="gallery foto">
+                            <h2 class="icon-animation">Audi</h2>
+                            <p>Cost: 50000$</p></div>
+                        <div class="card"><img class="image opacity-animation w-90 h-100"
+                                               src="public/images/goods/car2.jpg"
+                                               alt="gallery foto">
+                            <h2 class="icon-animation">Audi</h2>
+                            <p>Cost: 60000$</p></div>
+                        <div class="card"><img class="image opacity-animation w-90 h-100"
+                                               src="public/images/goods/car3.jpg"
+                                               alt="gallery foto">
+                            <h2 class="icon-animation">Audi</h2>
+                            <p>Cost: 55000$</p></div>
+                        <div class="card"><img class="image opacity-animation w-90 h-100"
+                                               src="public/images/goods/car4.jpg"
+                                               alt="gallery foto">
+                            <h2 class="icon-animation">BMW</h2>
+                            <p>Cost: 45000$</p></div>
+                        <div class="card"><img class="image opacity-animation w-90 h-100"
+                                               src="public/images/goods/car5.jpg"
+                                               alt="gallery foto">
+                            <h2 class="icon-animation">Mercedes-Benz</h2>
+                            <p>Cost: 70000$</p></div>
+                        <div class="card"><img class="image opacity-animation w-90 h-100"
+                                               src="public/images/goods/car6.jpeg"
+                                               alt="gallery foto">
+                            <h2 class="icon-animation">Ferrari</h2>
+                            <p>Cost: 120000$</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+<script src="src/assets/js/script.js"></script>
+</body>
+</html>
