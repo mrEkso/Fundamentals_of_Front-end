@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Okaianchenko D.O. IA-13</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="KPI,Lab1,Front">
+    <meta name="description" content="Lab1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style>
+        .form-group {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 30px;
+        }
+
+        .form-group input, textarea {
+            display: block;
+            position: relative;
+            width: 100%;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            background: #E9EFF6;
+            line-height: 40px;
+            border-width: 0;
+            border-radius: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 10px;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="d-flex justify-content-center">
+        <img src="assets/images/logo.png" alt="logo">
+    </div>
+</header>
+<div class="container-fluid bg-gold">
+    <div class="container">
+        <div class="content d-flex justify-content-center">
+            <form class="form-group" method="post" onsubmit="return false;">
+                1. Ваше ПІБ:<br>
+                <input type="text" name="fnm" value="">
+                <br>
+
+                2. Телефон:<br>
+                <input type="text" name="phone" value="">
+                <br>
+
+                3. ID-card:<br>
+                <input type="text" name="card" value="">
+                <br>
+
+                4. Факультет:<br>
+                <input type="text" name="faculty" value="">
+                <br>
+
+                3. Дата народження:<br>
+                <input type="text" name="birthdate" value=""><br>
+                <input type="hidden" name="hidden" value="ok">
+                <input type="submit" value="Надіслати" name="Submit"
+                       onClick="return validate(this.form)">
+            </form>
+            <div id="output">
+            </div>
+        </div>
+        <div id="magic_table" class="d-flex justify-content-center">
+            <input type="color" id="color_picker" value="#ff0000">
+            <table>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="assets/js/data.js"></script>
+</body>
+</html>
