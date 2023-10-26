@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="11e35aee-0efb-4dbb-88cf-952ffae82827" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/assets/images/Berlin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/assets/images/san_francisco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/assets/images/Berlin.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,13 +17,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lab-4" />
+        <entry key="$PROJECT_DIR$" value="Lab-6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Main/WebstormProjects/Fundamentals_of_Front-end/Lab6/assets",
+    "last_opened_file_path": "C:/Users/Main/WebstormProjects/Fundamentals_of_Front-end/Lab7/my-app/src/Components",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -47,16 +52,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab6\assets" />
-      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end" />
-      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab5\assets\images" />
-      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab4\assets\js" />
-      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab3\assets" />
+      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab7\my-app\src\Components" />
+      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab7\my-app\src\assets\images" />
+      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab7\Lab4\assets\images" />
+      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab4\assets\images" />
+      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab7\my-app\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab7\my-app\public\images\goods" />
+      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab7\my-app\public\images" />
+      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab7\my-app\public" />
       <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab4\assets\images" />
-      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab1\assets" />
-      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab1\Images" />
+      <recent name="C:\Users\Main\WebstormProjects\Fundamentals_of_Front-end\Lab7" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -75,6 +82,7 @@
       <workItem from="1697912306723" duration="10000" />
       <workItem from="1697912366495" duration="150000" />
       <workItem from="1698278492080" duration="3532000" />
+      <workItem from="1698326617883" duration="10789000" />
     </task>
     <servers />
   </component>
